@@ -6,28 +6,41 @@ namespace Bulldozer
     {
         public static void Main(string[] args)
         {
-            /* Instantiate the BullDozer class.
-             * Make a copy of the blueprint for each dozer */
-            var dozer = new BullDozer ("Yellow", "Mini");
-            
-            var dozer2 = new BullDozer("Red", "Large");
-            
+            var worker = new FactoryWorker();
+            var result = worker.AddNumbers(2, 3);
 
-            Console.WriteLine("Bulldozer is: " + dozer.color);
-            Console.WriteLine("Bulldozer2 is: " + dozer2.color);
+            Console.WriteLine(result.ToString());
+            
         }
     }
 
-    public class BullDozer
+    public class FactoryWorker
     {
-        // Constructor will have the same name as the class
-        public BullDozer (string _color, string _size)
+        public FactoryWorker()
         {
-            this.color = _color;
-            this.size = _size;
+
         }
 
-        public string color { get; set; }
-        public string size { get; set; }
+        public int AddNumbers (int num1, int num2)
+        {
+            var result = num1 + num2;
+            result = result + 100;
+            result = result - 100;
+            return result;
+        }
+   
     }
 }
+
+//Make a car class that has colour and manafacture. Make car1 object instantiate with color red
+// and manufacturer (Toyota), Make a new Saloon Car class that inherits form Car class
+// Add new property called numberOfSeats
+
+    // Write 3 constructors to do the following.
+    // Constructor 1 allows assignment of numberOfSeats only
+    // Constructor 2 allows assignment of manafacturer only
+    // Constructor 4 allows assignment of numberOfSeats, manufactuer and color
+
+    // Create object saloonCar1 with 2 Seats
+    // Create object saloonCar2 with 3 seats and manufactuer Nissan
+    // Create object saloonCar3 with 4 seats manafactuer Ford and color purple
