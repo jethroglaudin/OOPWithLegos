@@ -39,6 +39,7 @@ namespace Cars
         public string manufacturer { get; set; }
     }
 
+    // Using inheritance to inherit properties from Car
     public class SaloonCar : Car
     {
         public SaloonCar()
