@@ -43,4 +43,4 @@ namespace Bulldozer
 
     // Create object saloonCar1 with 2 Seats
     // Create object saloonCar2 with 3 seats and manufactuer Nissan
-    // Create object saloonCar3 with 4 seats manafactuer Ford and color purple
+    // Create object saloonCar3 with 3 seats manafactuer Ford and color purple
