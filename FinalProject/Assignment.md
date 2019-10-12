@@ -11,11 +11,11 @@
 
 - Constructor 1 allows assignment of numberOfSeats only. 
 
-- Constructor 2 allows assignment of manafacturer only. 
+- Constructor 2 allows assignment of numberOfSeats manafacturer only. 
 
-- Constructor 3 allows assignment of numberOfSeats.
+- Constructor 3 allows assignment of numberOfSeats, manufacturer and color.
 
-- Manufactuer and color Create object saloonCar1 with 2 Seats
+- Create object saloonCar1 with 2 Seats
 
 - Create object saloonCar2 with 3 seats and manufactuer Nissan
 
